@@ -1,0 +1,116 @@
+/* formatar a div */
+
+
+/* criação de regra */
+div {
+    /* no pricipio nós iremos trabalhar com px para dimeção de divs */
+    width: 300px;
+    height: 150px;
+
+    /* No momento a div está invisível, mas podemos alterar isso mundo
+    a cor dela pro exemplo */
+    background-color: #999;
+
+    /* agora ela passou a estar cinza */
+
+    /* se não for defidida a largura da div, ela ocupara todo espaço da linha
+    isso devido a div ser um elemento block, esse elemento block sempres ocupá
+    todo espaço na linha */
+
+    /* Se eu não definir a altura ele difinirá que a altura terá a altura 
+    de seu conteudo  */
+
+    /* 
+    Por pixel ser uma "medida fixa" quando definimos um valor a div sempre 
+    terá essa largura independente do tamanho da tela do usuário o que faz dela uma  medida não resposiva
+
+    Existem outros tipos de medida que não são fixos um dos mais conhecidos 
+    é a %
+
+    Essa porcetagem sempre leva em consideração o elemento pai, então se eu difinir que o tamanho do elemento pai é toda a tela, e definir que o tamnho
+    da div é 100% ela ocupará a tela inteira.
+    */
+    width: 30%;
+
+    /* Outra caracteristica do elemento em bloco é que ele não permite que
+    nenhum conteudo fique ao seu lado */
+
+    /* Uma das formar de mudar esse conceito de posicionamento de bloco 
+    e setar como inline a unica a função dessa propriedade é deixar na 
+    mesma linha, eu mudo isso através da propridade display.*/
+
+    display: inline;
+
+    /*a desvantagem do display inline é que ele assume que a altura da div é igual a de seu conteudo.*/
+
+    /* para combater essa desvantagem possuimos o display inline-block,
+    que faz com que as divs fiquem com tamanho original e uma ao lado
+    da outra */
+
+    display: inline-block;
+
+    /* Vamos retornar ao padrão */
+
+    display: block;
+
+    /* também podemos utilizar a float que faz com que ele fluere pela 
+    direta ou pela esquera */
+
+    float: left;
+
+    /* isso faz com que mesmo as div sendo blocos ele fiquem alinhadas
+    e caso a tela do usuário seja pequena ele passa a div para baixo */
+
+    /* se eu mudar para float rigth ele passas a linha as divs a partir 
+    da lateral direita da tela do usuário, porém ele também inverte a ordem dos itens */
+
+    /* Não há float center */
+
+    /* Caso exista espaço disponível o elemento a abaixo também flutuará indenpendente da entrutura do html, para quebrar essa herança de css podemos usar a propriedade clear no elemento que não deveiria está flutuando*/
+}
+
+/* a partir do momento que você utiliza o clear ele quebra a herança de css */
+
+h1 {
+    clear: left
+}
+
+div {
+    /* para aplicar espaçamento entre as div, podemos utilizar a margin,
+    podemos aplicar espaçamento em todas as margins ou somente em uma das direções margin top, right, bottom, left
+     */
+
+    margin: 12px;
+
+    /* margin cima baixo */
+
+    margin: 12px 0;
+
+    /* margin para esquerda e direta */
+
+    margin: 0 12px;
+
+    /* margin para cima, direta/esquerda, baixo */
+
+    margin: 20px 25px 16px;
+
+    /* margin diferente em todos os lados */
+
+    margin: 4px 5px 7px 8px;
+
+    /* margin exclusiva só para cima */
+
+    margin-top: 5px;
+
+    /* margin só para esquerda */
+
+    margin-left: 10px;
+
+    /* margin para baixo */
+
+    margin-bottom: 15px;
+
+    /* margin para direita */
+
+    margin-right: 60px;
+}

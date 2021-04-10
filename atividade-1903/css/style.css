@@ -1,0 +1,119 @@
+
+/* 
+   O asterisco representa todas as tags, então todos os estilos
+    serão aplicados a todas as tag do documento
+*/
+* {
+    /* 
+        font-family: propriedade usada para fazer a seleção de qual fonte de texto
+        você vai usar no projeto. Pode ser usada de forma individual em
+        tags especificas ou pode ser colocado no seletor geral
+        para que todo o site tenha a mesma fonte.
+    */
+    font-family: sans-serif;
+}
+
+p {
+    /* 
+        text-align: propridade usada para definir o alinhamento do texto.
+        Nesse caso usamos a opção de justificar o texto, você pode ver mais 
+        opções no seguinte site https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-align
+        
+    */
+    text-align: justify;
+
+    /*
+        margin-bottom: margim no é um espaço após o seu items que você quer que não seja ocupado 
+        por nadam ou seja se tivermos um items grudado ao outro e um deles tivar margin essa
+        margin vai empurrar o item que não possui margim para a distância que você definir que.
+
+        Nesse caso utilizamos o margim bottom que vai aplicar o espaçamento em baixo, mas também
+        possuimos outras opções, são elesa
+
+        bottom (em baixo como já vimos)
+        top (cima)
+        rigth (direta)
+        left (esquerda)
+
+        O nome das propreidades fica então
+
+        margim-bottom:
+        margin-top:
+        margim-rigth: 
+        margim-left:
+
+        Para não precisamos escrever sem essas 4 linhas existem formas de "resumir" são elas
+
+        margim: 20px
+
+        Quando inserimos só a palavra margim e inserimos uma valor ele define que todas as 
+        direções terão 20px
+
+        margim: 200px 300px;
+
+        Quando inserimos só a palavra margim e colocamos dois valores como no exemplo acima 
+        a margim de 200px será aplicada a top e bottom e a margim de 300px serão aplicada 
+        para left e rigth
+
+
+        margim: 50px 23px 544px 130px
+
+        Quando inserimos só a palavra margim e colocamos quatro valores é imporeante que imagenmos 
+        um relógio on a margim irá obdecer o sentido horário, ou seja 50 será aplicado ao top, 
+        23 será aplicado a direita, 544 será aplica em baixo e 130 a esquerda
+
+    */
+    margin-bottom: 40px;
+}
+
+ul {
+    margin-bottom:40px
+}
+
+section {
+    /*
+        Existem várias formas de alinhas items no css e todas irão funcionar depende do que você 
+        precisar, mais uma forma interessante de se pensar para facilitar no alinhamento de intens 
+
+        É pensar que todas as tag da mesma linha estarão dentro de uma tag "superior" ou como estamos 
+        acostumados a chamar tag pai e essa tag pai vai dizer ou não se as tags filhas estarão alinhadas
+
+        Nesse caso utilizamos a propriedade display para fazer o alinhamento, várias outras forma de 
+        alhamento também vao utilizar essa propriedade
+
+        Nesse casos utilzamos o flex por ser um forma fácil, esse conteicito é chamado de flexbox, mas isso 
+        é uma asssunto mais complexo o importante aqui é que quando eu utilizo o flex posso também utilizar a 
+        propriedade justify-content
+
+        para saber mais sobre o flexbox acesse esses sites: 
+        https://css-tricks.com/snippets/css/a-guide-to-flexbox/ (está em inglês, mas tem bastente desenhos 
+        ilustrativos) 
+
+        ou você pode ver por aqui também 
+
+        https://www.alura.com.br/artigos/css-guia-do-flexbox?gclid=Cj0KCQjw3duCBhCAARIsAJeFyPUSzpRXFR2QiMagClAHLr8RXKtmZvgNQZr_RMwh2YQuZ_KnrXDTWy8aArQ4EALw_wcB
+    */
+    display: flex;
+
+    /*
+        Essa propreidade só pode ser usada em elementos que contanham display flex, elas é
+        responsável basicamente pode ditar o posiocionamento dos elementos filhos em 
+        relação ao eixo X
+
+        Nesse caso o space evenly vai calcular todo o tamanho da tag pai e vai posicionar 
+        os itens com o mesmo espaço entre eles e com relação as bordas
+    */
+    justify-content: space-evenly
+}
+
+img {
+
+    /* 
+        Essa é uma das tag mais usadas e importantes do css width vai dizer a largura do seu 
+        componente então todo você basicamente insere um valor que vai ditar qual será a largura
+        do da tag em questão. 
+
+        para saber mais https://developer.mozilla.org/pt-BR/docs/Web/CSS/width
+    */
+    width: 270px;
+}

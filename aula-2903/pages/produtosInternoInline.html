@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link css -->
+    <!-- .. siginifica a ação de voltar um nível na estrutura de pastas  -->
+    <!-- ./ significa que você vai começar da pasta em que você está -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Tamnbém podemos usar o css interno que só perde para o inline -->
+
+    <!-- type é usado para navegadores mais antigos -->
+
+    <!-- Essa tag também functiona no body mas normalmente é feito no 
+    head-->
+    <style type="text/css">
+        h1 {
+            color: #000;
+        }
+    </style>
+
+    <!-- Se não hover css inline no h1 ele será da cor que o css interno
+    definir, é como se ele estivessa mais próximo do que o css externo -->
+
+    <!-- Não vale a pena pq acaba sendo aplicado somente em uma página
+    então você não tem reaproveitamento de código -->
+
+    <!-- Também não é um boa prática pq estamos misturando estilos e
+    conteudo -->
+
+    <title>Página de Produtos</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="./clientes.html">Clientes/</a>
+        </li>
+        <li>
+            <a href="../index.html">Home/</a>
+        </li>
+        <li>
+            <a href="./servicos.html">Serviços/</a>
+        </li>
+    </ul>
+
+    <!-- Lembrando que o css inline é o css com mais prioridade -->
+
+    <!-- Para faze o css inline nós utilizamos a propriedade style -->
+
+    <!-- Como ele tem mais prioridade ele permace com a cor final -->
+
+    <!-- Não usa não, não vale a pena -->
+
+    <h1 style="color: #f60;">Página de Produtos</h1>
+
+    <p>Você está em <a href="../index.html">Home</a> - Produtos</p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo obcaecati sed hic consectetur, sequi vitae architecto possimus odio fugit. Maxime architecto inventore eaque ab molestiae quisquam facilis illum culpa autem, cumque dolor nostrum molestias veniam, at vitae hic dignissimos esse excepturi cupiditate vero. Doloremque, fuga excepturi illo ratione exercitationem porro!
+    </p>
+
+    <p>
+        Assumenda, sit voluptatum sequi vel libero distinctio commodi earum at? Voluptatem, dolorum maxime! Tempore exercitationem praesentium quod amet rerum doloremque quos vitae delectus libero atque sed nemo veritatis harum molestiae ea, cum accusantium reiciendis itaque! Maxime quo voluptatem voluptatum corporis. Qui libero rem tenetur placeat dignissimos, ullam iure amet cum.
+    </p>
+</body>
+</html>

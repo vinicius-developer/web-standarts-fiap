@@ -1,0 +1,57 @@
+/*
+    Para selecionar conteudos do arquivo html 
+    funciona da seguinte forma 
+
+    tag - class - pode ser id mais não faça {
+        bloco de propriedades com os estilos desejados 
+        é necessário inserir ponto e virgula no final de 
+        todas as linhas
+    }
+
+    Esse arquivo também é chamado de folha de estilos
+
+    Quando você adiciona o estilo a alguma tag nós camhamamos de regras
+
+    seletor {
+        propriedade: valor
+    }
+*/
+
+h1 {
+    /* 
+        Propridade usada para mudar a cor da fonte
+        do conteudo da tag
+
+        para especificar a cor pode utilizar 
+        palavra em inglês, hexadecimal, rgb, rgba, hsl
+
+        códigos rgb (red, green, blue) numeros de 0 a 255
+
+        o maior numero tem a predominancia na cor
+    */
+    color: rgb(83, 29, 209);
+    /* 
+        Propriedade para mudar o tamonho da fonte 
+        existem diversas formas de difinir tamaho 
+        (acho que a mais usada é px e em)
+    */
+    font-size: 50px;
+    /* 
+        Tipo de fonte
+
+        normalmente utizamos mais de uma para caso de não haver a fonte 
+
+        mas também podemos utilizar somente uma sem problemas
+    */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    color: blue;
+    font-size: 35px;
+    font-family: 'calibri';
+}
+
+p {
+    font-size: 16px /* padrão */ 
+}

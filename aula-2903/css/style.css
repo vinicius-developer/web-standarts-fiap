@@ -1,0 +1,114 @@
+ /* Link para sevidor de fontes do google */
+
+
+/* É interessante usar esse serviço sempre  
+mas não abuse na quantidade de fontes */
+
+/* È importante você inserir isso no início 
+para ele carregar antes no resto do cṍdigo*/
+
+/* Podemos utilizar também o font-face
+para inserir um fonte no computador
+da pessoa*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@300&display=swap');
+
+h1 {
+    /* definir cor da fonte */
+    /* color: red; */
+    color: #ff00dd;
+
+    /* Denifinir tamanho da fonte */
+    font-size: 40px;
+}
+
+/* 
+    Podemos selecionar as tags em cadeia dessa forma  
+
+    da mesma que são titulos, poderiam ser qualquer outra tag
+
+    sempre separado por vírgula
+*/
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Dela Gothic One', cursive;
+
+    /* Quando a fonte já vem grossa do google é quase inperceptivel 
+    a troca de tamanho*/
+    font-weight: 900;
+}
+
+/* Só a troca de fontes já da bastante diferença no arquivo */
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+
+    /* mexe com a espessura da linha da fonte */
+    font-weight: 500;
+
+    /* Troca a cor da fonte */
+    color: rgb(107, 97, 97);
+
+    /* Faz o alinhamento de texto */
+    /* Israel não gosta de textos muito longo centralizados
+    nem de titulo pequenos centralizados */
+
+    /* Se as palavras forem muitos grandes o justify faz com que 
+    fique com muitos espaços entra as palavras*/
+    text-align: justify;
+
+    /* Aplica algumas decorações no texto */
+    /* text-decoration: underline; */
+    /* text-decoration: overline; */
+    /* text-decoration: line-through; */
+
+    /* Text tranform tranforma o text maiusculo
+    em minusco e vice versa ou trasforma a primeira letra em 
+    minuscula*/
+    /* text-transform: lowercase; */
+    /* text-transform: uppercase; */
+    /* text-transform: capitalize; */
+
+    /* È utiliado para aplicar um recuo
+    apenas na primeira linha do paragrafo */
+    /* text-indent: 150px; */
+
+    /* Utiliado para dar sembra a texto
+    precisamos aplicar 4 valores esquerda, bottom, valors defoque, cor da sombra */
+    /* text-shadow: 2px 2px 5px rgb(92, 69, 69); */
+
+
+    /* PROFESSOR É MUITO EXIGENTE COM APARÊNCIA ENTÃO
+    TOME CUIDADO */
+
+    /* utilizado para espaçamento das letras */
+    letter-spacing: 5px; 
+    
+    /* utilizado para espaçamentos das palavras */
+    word-spacing: 5px;
+
+    /* altura das linhas do paragrafo
+    fax com que o leitor tenha uma leitura melhor */
+
+    /* é interessante declarar com o tamanho dobro da fonte */
+    line-height: 36px;
+}
+
+/* formatação de imagens */
+
+img {
+    /* alteração de largura */
+    /* Se você mexer só na altura 
+    por padrão ele já mexe na altura e 
+    vice versa*/
+    width: 230px;
+
+    /* alteração de altura */
+    height: 200px
+
+}
+
+/* 
+    Para colocar nossa página de arquivos státicos pode usar essa cara
+    https://app.netlify.com/drop
+*/
