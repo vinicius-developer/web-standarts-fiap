@@ -1,0 +1,233 @@
+
+ 
+/* Seletores são formas de selecionar os elementos 
+que quisermos 
+    
+podemos selecioanr diretamente pela tag no css, mas  
+isso vai selecionar todas as tag ao mesmo tempo
+
+
+exp:
+*/
+  
+
+div {
+    /*
+     largura 200px
+     altura: 300px
+     */
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+
+
+    /* 
+    para ver o tamanho da div
+    podemos dar uma cor de fundo para 
+    elas
+    
+    background-color: rgb(78, 78, 78)
+
+    a div como a maioria do html é transparente
+    */
+
+
+    /* 
+    Mas outra forma de poder ver a div é utilizar
+    o border
+
+    border basicamente é o contorno do elemento
+
+    assim com as margens também podemos utilizar 
+    com top - rigth - bottom - left
+
+    também podemos definir o border-width: 
+
+    estilo d borda border-style
+
+    cor da borda border-color
+    */
+
+
+    border-width: 5px;
+
+    border-style: solid;
+
+    border-color: red;
+
+    /* 
+        para não precisarmos utilizar 3 linhas podemos 
+        declarar somente com um propriedade 
+        o border
+
+        e ele funciona da seguinte forma
+
+        border: width style color;
+    */
+
+    border: 1px solid black;
+
+
+    /* Está é uma forma mais rápida */
+
+    /* 
+        Podemos até declara de outra forma, mas a certa é essa
+
+        O espaço da borda é para fora da borda, a unica coisa
+        que nois declaramos para dentro é o pedding
+
+        temos outros estilos de borda também;
+    */
+
+
+    border: 10px dotted red;
+
+    border: 10px double red;
+
+    border: 10px inset red;
+
+    border: 10px outset red;
+
+    border: 10px groove red;
+
+    /*
+        Apesar de exitir várias bordas
+        na maioria das vezes usamos o solid
+
+        e não muito grossa
+    */
+
+    /* 
+        Agora vamos falar de outra propriedade
+        o padding.
+
+        basicamente ele funciona da mesma forma 
+        que o margin, mas ele faz a distância para
+        dentro
+
+        as formas de se utilizar ele é bem paracido com o margin
+        por isso dependendo do livro pode ser chamado de margin 
+        interna
+    */
+
+    padding: 7px;
+
+    /* 
+        quando nós usamos padding o valor a ele atribuido
+        será adicionado a largura e ou a altura
+
+        qualquer forma de aplicar espaço no pedding irá 
+        modificar a altura e largura
+
+        para evitar isso podemos usar o box-sizing: border-box;
+
+        ele faz com que mesmo com a declaração do do pedding
+        o tamanho do elemento seja preservado
+    */
+
+    box-sizing: border-box;
+
+
+    /* 
+        é interessante declarar esse border-box no seletor
+        "*" para que seja aplicado em todos
+    */
+}
+
+/*
+    o problema do seletor da tags que utilizamos 
+    até agora é que ele irá mudar todas as 
+    tag div
+
+    por isso temos outros tipos de seletores 
+
+    um deles é o id (identificado unico) esse não
+    é muito recomendado, pos ele só funciona com 
+    um elemento, isso irá provocar muita repetição 
+    de código.
+
+    Também temos o atributo classe. Esse sim é mais
+    indicado para utilização pois permite que seja 
+    declarado em várias tags, então pode ser que tenhamos
+    uma classe em somente uma tag, ou em várias 
+    isso nos da um liberdade melhor para utilzar
+
+    Não que ids sejam inuteis, mas eles são melhores
+    utilizados com javascript que aprenderemos em breve.
+
+    Assim como em liguagens de programação por favor
+    seja ids ou classes, crie um nome que faça sentido
+    com o elemento
+
+    Por utilizarmos muito ids em javascript tente 
+    tente utilizar a anotação camelCase no nome dos
+    divs
+ */
+
+
+ /* 
+    esta é a forma para utilizar ids no css
+    inserimos o #antesDoNomeDaDiv
+ */
+ #segundaDiv{
+     width: 300px;
+ }
+
+ /* 
+    desta forma podemos formatar a propriedade que 
+    quiser e se não sobrecerver as propriedade declaradas
+    na div ele vaí continuar com as caracteristicas de lá
+
+    ele só ira mudar nas caracteristicas que você mexer
+ */
+
+
+/* 
+    para utilizamos classes precisamos inserir a notação ponto
+    antes do nome da classe .nome-da-classe
+
+    repare que não precisamos usar camelCase, mas isso é um
+    preferencia minha por ser o padrão do bootstrap.
+
+    mas existe centenas de normalizações
+
+    como a classe é um padrão mais livre para ser utilizado 
+    várias vezes, é interessante nós fortamos pequenas coisa
+    que irão alterar o todo no final
+
+    por exemplo criar uma classe para alterar somente o texto
+    outra somenta para o tamanhado, outra para margins e paddings 
+
+    assim elas mudaram o todo no final
+*/
+
+.default-text {
+    color: rgb(134, 21, 21);
+    font-size: 28px;
+}
+
+/* 
+    Nesse caso nós aplicamos em uma tag h2, 
+    mas poderiamos utilizar em qualquer tag,
+    claro é interessante que faça sentido o local
+    onde essa classe está sendo utilizada
+*/
+
+.underline-text {
+    text-decoration: underline;
+}
+
+/* 
+    Essas duas classe estão nos mesmo elementos
+*/
+
+
+/* 
+    Se você estiver utilizando visual studio code 
+    e passar o mouse por cima da classe, id ou tag
+    irá mostar a ordem de prioridade daquela tipo de
+    seletor
+*/
+
+
+ 
