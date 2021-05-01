@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+    /* 
+        Quando você aplica o box-sizing o valor de padding 
+        é adicionado no elemento
+    */
+
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}   
+
+/* Retira o mercador da lista */
+ul, ol {
+    list-style: none;
+}
+
+/* 
+    Normalmente os items criados são posiciondados 
+    na ordem padrão de cima para baixo 
+
+    Uma das melhores formas de alterar isso é utilizando
+    o flexbox
+
+    o flexbox faz o posionamento baseado no elemento pai 
+    
+    pai é o elemento onde o objeto está inserido ou seja identado
+
+    <pai>
+        <filho>
+        </filho>
+    </pai>
+
+    Como já observamos um coantainer pode ter um ou mais filhos
+
+    Para definirmos o flex box o elemento pai precisar o valor o flex,0
+
+    Os filhos não herdam a propridade, somente os elemetos aplicados seguem esse
+    conceito
+
+    Após o pai receber a propriedade ele vira um flex container
+
+    Os filhos dele se tornam um flex-items
+
+    Por padrão ele fica um ao lado do outro pois ele tem uma 
+    propriedade flex-direction setada como row
+
+    podemos setar como column que vai deixar um em baixo do outro 
+
+    e column rever vai inverter a ordem das columns 
+
+*/
+
+.header {
+    width: 100%;
+    height: 100px;
+    
+    color: #fff;
+    display: flex;
+    padding: 0 40px;
+
+    /* 
+        com flex box podemos controlar o alinhamento vertical e horizontal
+
+        vertical: para fazer o alinhamento vertical usamos o align-items: ;
+
+        para alinha do começo do container pai: flex-start
+
+        para alinhar no meio: center
+        
+        para alinhar no em baixo: flex-end
+    */
+
+    /* Nesse caso foi usado o no centro */
+    align-items: center;
+
+    /* 
+        Para fazer o alinhamento horizontal temo a propriedade 
+        
+        justify-content: 
+
+        se você quiser alinhas no inicio do elemento pai temos o: flex-start
+
+        para alinhar no centro: center
+
+        para alinhar no final: flex-end
+
+        para alinhar com espaço entro os dois: space-between
+
+        para alinhar com espaços igual entre os itemes: space-between 
+
+        para alinhar os dois com a mesma quantidade de espaço entre os dois: space-evenly
+    */
+
+    justify-content: space-between;
+
+
+    /* 
+        Nunca se esqueça de deixar o pai flexivel
+    */
+}
+
+.menu-icon {
+    color: #ed145b;
+}
+
+.menu-principal ul{
+    display: flex;
+}
+
+.menu-principal ul li{
+    margin: 0 8px
+}
+
+
+.menu-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    color: #ed145b;
+}
+
+.container {
+    width: 100%;    
+
+    /* 
+        Podemos inserir imagens com background da seguinte forma
+    */
+
+
+    /* 
+        Podemos adicionar tembém um grandiente a background image
+
+        utilize sites na web para pegar o o gradiente 
+
+        https://webgradients.com/
+
+        utilizar gradients talvez até mesmos para fundo branco
+    
+    */
+
+    background-image: linear-gradient(120deg, #f193fb3d 0%, #f5576c36 100%),  url('../images/banner-1.jpg');
+
+    /* 
+        Quando nós só definimos a imagem, a partir do comento que 
+        que a tela for maior que a imagem ela irá repetir
+
+        podemos combater esse problema da seguinte forma
+    */
+
+    background-repeat: no-repeat;
+
+
+    /* 
+        O css3 adicionou uma medida baseada em view-port
+
+        o view post é exatamento o tamanho da area de exibição
+        
+        Uma view port é o tamanho da area de exibição do conteudo
+
+        existem duas medidas uma para largura da tela vw
+
+        e outro para o comprimenro da tela vh
+
+        o problema do view poer é que ele conta a barra a rolagem
+        e isso pode causar problemas na responsividade 
+
+
+        para tirar a medida
+
+        1vh = 1% da altura da tela
+        1vw = 1% da largura da tela
+
+        100vw/100vh = 100% da largura da tela
+
+        Essa medidas foram criadas pela apple
+
+        Ele é diferente da porcentamgem pq a porcentagem
+        faz relação com o elemento pai, já a view port sempre
+        referência o tamanho da tela e não ao elemento pai
+    */
+
+    height: 100vh;
+
+    /* 
+        Normalmente a imagem tera seu valo original que não
+
+        é muito bom pois normalmente esse tamanho é diferente
+
+        do tamanho da tela do usuário
+
+        normalmente utilzamos a seguinte forma
+    
+    */
+
+
+    background-size: cover;
+
+    /* 
+        Para ajustar a posição da imagem
+
+        podemos alinhar no eixo x e y 
+        sendo o primeiro o valor de x e o segundo o valor de y
+    */
+
+    background-position: 50%;
+}
+
+
+
+
+
